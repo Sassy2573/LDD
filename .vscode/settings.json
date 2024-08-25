@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ide.h": "c",
+        "blkdev.h": "c",
+        "delay.h": "c",
+        "types.h": "c"
+    }
+}
