@@ -1,3 +1,11 @@
+/*
+ * @Author: Sassy2573 chenyinlin0429@gmail.com
+ * @Date: 2024-08-15 01:36:53
+ * @LastEditors: Sassy2573 chenyinlin0429@gmail.com
+ * @LastEditTime: 2024-08-24 23:54:04
+ * @FilePath: /code/Driver_Development/2_led/led.c
+ * @Description: 
+ */
 #include <linux/types.h>
 #include <linux/kernel.h>
 #include <linux/delay.h>
@@ -74,4 +82,13 @@ static int led_open(struct inode *inode, struct file *filp)
 static ssize_t led_read(struct file *filp, char __user *buf, size_t cnt, loff_t *offt)
 {
     return 0;
+}
+
+static ssize_t led_write(struct file *filp, const char __user *buf, size_t cnt, loff_t *offt)
+{
+    int retvalue;
+    unsigned char databuf[1];
+    unsigned char ledstat;
+
+    retvalue = copy_from_user(databuf, buf, cnt);
 }
