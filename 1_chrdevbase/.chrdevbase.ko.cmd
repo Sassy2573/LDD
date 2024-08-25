@@ -1,0 +1,1 @@
+cmd_/home/chen/linux/code/Driver_Development/1_chrdevbase/chrdevbase.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/chen/linux/code/Driver_Development/1_chrdevbase/chrdevbase.ko /home/chen/linux/code/Driver_Development/1_chrdevbase/chrdevbase.o /home/chen/linux/code/Driver_Development/1_chrdevbase/chrdevbase.mod.o

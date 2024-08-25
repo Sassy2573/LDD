@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "ide.h": "c",
+        "types.h": "c",
+        "interrupt.h": "c",
+        "irqflags.h": "c",
+        "module.h": "c",
+        "hardirq.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
